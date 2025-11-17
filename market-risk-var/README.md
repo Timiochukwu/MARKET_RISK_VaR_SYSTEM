@@ -19,6 +19,14 @@ A comprehensive Value at Risk (VaR) calculation and analysis system using time s
 3. **Monte Carlo VaR**: Simulation-based approach with bootstrap or parametric methods
 4. **GARCH VaR**: Volatility-adjusted VaR using GARCH forecasts
 
+### 🚀 Advanced Features (NEW!)
+- **Advanced Risk Metrics**: CVaR/Expected Shortfall, Maximum Drawdown, Sharpe/Sortino/Calmar Ratios, VaR Decomposition
+- **Stress Testing**: Market crash scenarios, volatility spikes, correlation breakdown, historical crisis replays, reverse stress testing
+- **Report Generation**: Professional Excel, HTML, and text reports for management and regulatory compliance
+- **Portfolio Analytics**: Multi-asset VaR, diversification benefit analysis, correlation matrices
+
+📖 **See [ADVANCED_FEATURES.md](ADVANCED_FEATURES.md) for detailed documentation with examples!**
+
 ## 📁 Project Structure
 
 ```
@@ -39,7 +47,10 @@ market-risk-var/
 │   │   └── main.py             # FastAPI application
 │   └── utils/
 │       ├── backtesting.py      # VaR backtesting
-│       └── visualization.py    # Plotting functions
+│       ├── visualization.py    # Plotting functions
+│       ├── advanced_metrics.py # Advanced risk metrics (NEW)
+│       ├── stress_testing.py   # Stress testing (NEW)
+│       └── report_generator.py # Report generation (NEW)
 ├── dashboard/
 │   └── streamlit_app.py        # Monitoring dashboard
 ├── models/                      # Saved models
