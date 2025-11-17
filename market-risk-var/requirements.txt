@@ -29,3 +29,15 @@ requests>=2.31.0
 
 # Report generation
 openpyxl>=3.1.0  # Excel file support
+
+# Database (for data persistence and tracking)
+sqlalchemy>=2.0.0  # ORM for database operations
+psycopg2-binary>=2.9.0  # PostgreSQL adapter (optional)
+
+# Machine Learning (optional but recommended for ML features)
+tensorflow>=2.13.0  # Deep learning for LSTM/GRU VaR models
+scikit-learn>=1.3.0  # Already included above
+
+# Task Scheduling
+schedule>=1.2.0  # Job scheduling
+apscheduler>=3.10.0  # Advanced scheduling
