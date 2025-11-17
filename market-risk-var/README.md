@@ -25,7 +25,13 @@ A comprehensive Value at Risk (VaR) calculation and analysis system using time s
 - **Report Generation**: Professional Excel, HTML, and text reports for management and regulatory compliance
 - **Portfolio Analytics**: Multi-asset VaR, diversification benefit analysis, correlation matrices
 
-📖 **See [ADVANCED_FEATURES.md](ADVANCED_FEATURES.md) for detailed documentation with examples!**
+### 🤖 Machine Learning & Integration (NEW!)
+- **ML VaR Models**: LSTM and GRU deep learning models for superior predictions, Ensemble methods, Anomaly detection
+- **Database Integration**: Full SQLAlchemy ORM with 5 tables for historical tracking, audit trails, and regulatory compliance
+- **Email Alerts**: Automated notifications for VaR breaches, anomalies, backtest failures with HTML formatting
+- **Task Scheduler**: Automated daily calculations, weekly retraining, real-time monitoring, EOD reports
+
+📖 **See [ADVANCED_FEATURES.md](ADVANCED_FEATURES.md) and [ML_AND_INTEGRATION_GUIDE.md](ML_AND_INTEGRATION_GUIDE.md) for detailed documentation with examples!**
 
 ## 📁 Project Structure
 
@@ -41,7 +47,8 @@ market-risk-var/
 │   ├── models/
 │   │   ├── garch_model.py      # GARCH volatility forecasting
 │   │   ├── arima_model.py      # ARIMA price forecasting
-│   │   └── var_calculator.py   # VaR calculation methods
+│   │   ├── var_calculator.py   # VaR calculation methods
+│   │   └── ml_var_models.py    # ML VaR (LSTM/GRU/Ensemble) (NEW)
 │   ├── api/
 │   │   ├── schemas.py          # API data models
 │   │   └── main.py             # FastAPI application
@@ -50,7 +57,10 @@ market-risk-var/
 │       ├── visualization.py    # Plotting functions
 │       ├── advanced_metrics.py # Advanced risk metrics (NEW)
 │       ├── stress_testing.py   # Stress testing (NEW)
-│       └── report_generator.py # Report generation (NEW)
+│       ├── report_generator.py # Report generation (NEW)
+│       ├── database.py         # Database integration (NEW)
+│       ├── email_alerts.py     # Email alerting system (NEW)
+│       └── scheduler.py        # Task scheduler (NEW)
 ├── dashboard/
 │   └── streamlit_app.py        # Monitoring dashboard
 ├── models/                      # Saved models
